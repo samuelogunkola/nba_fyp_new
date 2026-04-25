@@ -33,7 +33,10 @@ page_header(
     "Explore saved NBA score predictions and compare projected scores against actual outcomes.",
     ["Regression", "Ridge Model", "Score Forecasting", "Pregame Features"],
 )
-
+st.info(
+    "This page displays saved score prediction outputs from the trained local experiments. "
+    "It is used to explore prediction quality and model errors in the hosted app."
+)
 
 if details_df is None:
     st.error(f"Missing file: `{SCORE_DETAILS_PATH}`")

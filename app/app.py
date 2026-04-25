@@ -29,6 +29,9 @@ page_header(
     ["Final Year Project", "Machine Learning", "Pregame Prediction", "Explainable AI"],
 )
 
+st.info(
+    "Hosted demo note: this online version uses lightweight demo datasets so participants can access the app reliably during usability testing."
+)
 
 # =========================
 # TOP METRICS

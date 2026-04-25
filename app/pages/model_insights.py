@@ -40,6 +40,10 @@ page_header(
     ["Model Evaluation", "Experiment Results", "Performance Analysis"],
 )
 
+st.info(
+    "These metrics come from the full local machine learning experiments. "
+    "The hosted app uses lightweight demo datasets to keep the usability-test version fast and accessible."
+)
 
 # ============================================================
 # TOP SUMMARY

@@ -74,8 +74,13 @@ shap_df = load_csv(shap_csv_path)
 page_header(
     "🔍",
     "Explainability",
-    "Understand which features influence the NBA win prediction model using SHAP-based interpretation.",
+    "Explore saved SHAP outputs from the win prediction model to understand which features influenced predictions.",
     ["SHAP", "Feature Importance", "Transparency", "Win Prediction"],
+)
+
+st.info(
+    "Explainability outputs are precomputed and saved as CSV/image files. "
+    "They are displayed here rather than regenerated live to keep the deployed app lightweight."
 )
 
 

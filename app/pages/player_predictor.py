@@ -80,7 +80,7 @@ page_header(
     ["Regression", "Ridge Model", "PTS R² 0.642", "Player-Level Prediction"],
 )
 
-
+st.info("Explore player stat estimates using lightweight demo data and recent rolling performance features.")
 # ============================================================
 # FILE CHECKS
 # ============================================================

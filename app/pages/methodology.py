@@ -28,6 +28,10 @@ page_header(
     ["System Design", "ML Pipeline", "Leakage-Safe", "Evaluation"],
 )
 
+st.info(
+    "Deployment note: the hosted Streamlit version uses lightweight demo datasets for usability testing. "
+    "The complete data processing, training, and evaluation pipeline was performed locally using the full datasets."
+)
 
 # ============================================================
 # SUMMARY METRICS
@@ -96,7 +100,7 @@ with p5:
 with p6:
     glass_card(
         "6. Dashboard Deployment",
-        "All models and results were integrated into an interactive Streamlit application for real-time predictions.",
+        "Model results, explainability outputs, and lightweight demo prediction interfaces were integrated into an interactive Streamlit application for usability testing.",
     )
 
 

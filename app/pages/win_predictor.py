@@ -31,10 +31,14 @@ results_df = load_csv(WIN_RESULTS_PATH)
 page_header(
     "📊",
     "Win Predictor",
-    "Estimate home-team win probability using lightweight deployment data based on historical pregame features.",
-    ["Deployment Demo", "Pregame Features", "Win Probability", "Usability Testing"],
+    "Explore a hosted demo win-probability interface using lightweight pregame data. Full trained model results are reported in Model Insights.",
+    ["Hosted Demo", "Pregame Features", "Win Probability", "Full Results in Model Insights"],
 )
 
+st.info(
+    "Hosted version note: this page uses lightweight demo data for reliable online usability testing. "
+    "The full trained Gradient Boosting model evaluation is shown in Model Insights."
+)
 
 if df is None:
     st.error(f"Missing demo dataset: `{WIN_DATA_PATH}`")
