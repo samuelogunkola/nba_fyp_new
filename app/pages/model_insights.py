@@ -244,6 +244,3 @@ with a2:
         "Ridge Regression was effective for regression tasks because rolling averages and efficiency metrics provide mainly linear signal. Gradient Boosting performed best for win classification due to its ability to capture non-linear matchup patterns.",
     )
 
-st.success(
-    "These results are suitable for the dissertation evaluation section because they compare multiple models, use leakage-safe features, and report both statistical and practical metrics."
-)
