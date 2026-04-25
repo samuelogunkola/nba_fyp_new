@@ -211,7 +211,7 @@ else:
 
     safe_feature_chart(top_df, feature_col, value_col)
 
-    st.dataframe(top_df, use_column_width=True)
+    st.dataframe(top_df, use_container_width=True)
 
     top_feature = str(top_df.iloc[0][feature_col])
     top_value = float(top_df.iloc[0][value_col])
