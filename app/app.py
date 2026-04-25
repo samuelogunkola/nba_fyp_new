@@ -114,29 +114,6 @@ with col2:
 divider()
 
 
-# =========================
-# USER TESTING TASKS
-# =========================
-
-st.subheader("User Testing Tasks")
-
-t1, t2, t3 = st.columns(3)
-
-with t1:
-    st.info(
-        "**Task 1**\n\nUse the Win Predictor to compare two teams and interpret the win probability."
-    )
-
-with t2:
-    st.info(
-        "**Task 2**\n\nUse the Player Predictor to find a player and analyse predicted stats."
-    )
-
-with t3:
-    st.info(
-        "**Task 3**\n\nUse Model Insights to determine which model performs best."
-    )
-
 
 # =========================
 # FINAL CTA
