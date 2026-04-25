@@ -192,7 +192,7 @@ st.subheader("Global Feature Importance")
 
 if value_col is None:
     st.warning("SHAP CSV found, but no numeric importance column could be detected.")
-    st.dataframe(shap_df.head(50), use_container_width=True)
+    st.dataframe(shap_df.head(50), use_column_width=True)
 else:
     shap_df[value_col] = pd.to_numeric(shap_df[value_col], errors="coerce")
     shap_df = shap_df.dropna(subset=[value_col])
@@ -211,7 +211,7 @@ else:
 
     safe_feature_chart(top_df, feature_col, value_col)
 
-    st.dataframe(top_df, use_container_width=True)
+    st.dataframe(top_df, use_column_width=True)
 
     top_feature = str(top_df.iloc[0][feature_col])
     top_value = float(top_df.iloc[0][value_col])
@@ -242,14 +242,14 @@ img1, img2 = st.columns(2)
 with img1:
     st.markdown("#### Summary Plot")
     if summary_img_path and summary_img_path.exists():
-        st.image(str(summary_img_path), use_container_width=True)
+        st.image(str(summary_img_path), use_column_width=True)
     else:
         st.info("Summary plot image not found.")
 
 with img2:
     st.markdown("#### Global Importance")
     if importance_img_path and importance_img_path.exists():
-        st.image(str(importance_img_path), use_container_width=True)
+        st.image(str(importance_img_path), use_column_width=True)
     else:
         st.info("Global importance image not found.")
 
@@ -257,7 +257,7 @@ with img2:
 if waterfall_img_path and waterfall_img_path.exists():
     divider()
     st.subheader("Single Prediction Explanation")
-    st.image(str(waterfall_img_path), use_container_width=True)
+    st.image(str(waterfall_img_path), use_column_width=True)
 
 
 divider()
