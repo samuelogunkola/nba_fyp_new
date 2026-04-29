@@ -312,5 +312,5 @@ with j3:
 
 # closing success banner summarising the scope of the project
 st.success(
-    "This methodology demonstrates a complete end-to-end machine learning system, suitable for a high-grade final-year project."
+    "This methodology demonstrates a complete end-to-end machine learning system."
 )
